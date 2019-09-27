@@ -9,4 +9,8 @@ app.config.from_object('flask_blog.config')
 
 db = SQLAlchemy(app)
 
-import flask_blog.views  # NOQA
+
+from flask_blog.views import (
+    views,
+    entries
+ )  # NOQA
