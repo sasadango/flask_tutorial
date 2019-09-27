@@ -18,7 +18,6 @@ def show_entries():
     return render_template('entries/index.html')
 
 
-
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     error = None
