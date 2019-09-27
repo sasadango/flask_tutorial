@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block body %}
-<form action="/login" method=post>
+<form action="{{ url_for('login') }}" method=post>
     <div class="form-group">
         <label for="InputTitle">ユーザー名</label>
         <input type="text" class="form-control" id="InputTitle" name=username>
